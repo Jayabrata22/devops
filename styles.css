@@ -1,0 +1,423 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #0078d4;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+                                            /* Here Starts the login Page HTML */
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  width: 380px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  /* background-color: #0056b3; */
+}
+
+/* Existing CSS styles */
+
+.or-divider {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-login a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.google-btn {
+  background-color: #db4437; /* Google Red */
+  margin-bottom: 4px;
+}
+
+.linkedin-btn {
+  background-color: #0077b5; /* LinkedIn Blue */
+  margin-bottom: 5px;
+}
+
+.github-btn {
+  background-color: #333; /* GitHub Black */
+  margin-bottom: 5px;
+}
+
+.facebook-btn {
+  background-color: #4267B2; /* Facebook Blue */
+  margin-bottom: 5px;
+}
+
+.social-login a:hover {
+  opacity: 0.8;
+}
+ 
+                                  /* style for sign up page */
+
+.Signup-container {
+  margin: 0;
+  padding: 0;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.SignUp-container {
+  width: 490px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 45px;
+}
+
+.Registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+button {
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  /* background-color: #0056b3; */
+  transform: scale(1.1);
+}
+
+/* Existing CSS styles */
+
+.or-divider {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-login a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.google-btn {
+  background-color: #db4437; /* Google Red */
+  margin-bottom: 5px;
+}
+
+.linkedin-btn {
+  background-color: #0077b5; /* LinkedIn Blue */
+  margin-bottom: 5px;
+}
+
+.github-btn {
+  background-color: #333; /* GitHub Black */
+  margin-bottom: 5px;
+}
+
+.facebook-btn {
+  background-color: #4267B2; /* Facebook Blue */
+  margin-bottom: 5px;
+}
+
+.social-login a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+/* Css style for Boards.html */
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.board {
+  display: flex;
+}
+
+.board-column {
+  flex: 1;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.board-column h2 {
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.add-item {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure DevOps-like UI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="logo">Azure DevOps</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Boards</a></li>
+      <li><a href="#">Repos</a></li>
+      <li><a href="#">Pipelines</a></li>
+      <li><a href="#">Test Plans</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+    <div class="login-container">
+        <form class="login-form" action="login.php" method="post">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="or-divider">OR</div>
+            <div class="social-login">
+                <button type="button" class="google-btn" onclick="signInWithPopup()" >Sign up with Google</button>
+                <button type="button" class="linkedin-btn">Sign up with LinkedIn</button>
+                <button type="button" class="github-btn">Sign up with GitHub</button>
+                <button type="button" class="facebook-btn">Sign up with Facebook</button>
+            </div>
+            <div class="create-account">
+                <p>Don't have an account? <a href="signup.html">Create a new account</a></p>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+  <p>&copy; 2024 Azure DevOps-like UI. All rights reserved.</p>
+</footer>
+<script src="firebaseAuthentication.js"></script>
+</body>
+</html>

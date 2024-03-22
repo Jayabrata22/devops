@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure DevOps-like Boards</title>
+<link rel="stylesheet" href="boardsstyle.css">
+</head>
+<body>
+<header>
+  <div class="logo">Azure DevOps</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Boards</a></li>
+      <li><a href="#">Repos</a></li>
+      <li><a href="#">Pipelines</a></li>
+      <li><a href="#">Test Plans</a></li>
+      <li><a href="#">Artifacts</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="sidebar">
+    <h2>Project Navigation</h2>
+    <ul>
+      <li><a href="#">Project 1</a></li>
+      <li><a href="#">Project 2</a></li>
+      <li><a href="#">Project 3</a></li>
+      <!-- Add more project links as needed -->
+    </ul>
+  </section>
+  <section class="content">
+    <h1>Boards</h1>
+    <div class="board">
+      <div class="board-column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>To Do</h2>
+        <div class="card" draggable="true" ondragstart="drag(event)">Task 1</div>
+        <div class="card" draggable="true" ondragstart="drag(event)">Task 2</div>
+        <!-- Plus button to add new item -->
+        <button class="add-item" onclick="addItem()">+</button>
+      </div>
+      <div class="board-column" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>In Progress</h2>
+      </div>
+      <div class="board-column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Done</h2>
+        <div class="card" draggable="true" ondragstart="drag(event)">Task 3</div>
+        <div class="card" draggable="true" ondragstart="drag(event)">Task 4</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Azure DevOps-like UI. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

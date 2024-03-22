@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure DevOps-like UI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="logo">Azure DevOps</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Boards</a></li>
+      <li><a href="#">Repos</a></li>
+      <li><a href="#">Pipelines</a></li>
+      <li><a href="#">Test Plans</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="Signup-container">
+    <div class="SignUp-container">
+        <form class="Registration-form" action="SIgnUp.php" method="post" onsubmit="return validationForm()">
+            <h2>Create Your Account</h2>
+            <p>Create an account to view and manage your Projects</p>
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="EmailID" required>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="UserName" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <!-- <small>At least 8  characters including one number and one special character.</small> -->
+                <!-- <small>At least 8 characters long, including a mix of uppercase letters, lowercase letters, numbers, and symbols.</ -->
+                <input type="password" id="password" name="PassWord" required>
+                <i class="fa fa-eye show-pass"></i>
+            </div>
+            <div class="input-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" id="Confirm-password" name="Confirm PassWord" required>
+            </div>
+            <span id="msg"></span>
+            <div class="input-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I  agree with the privacy policy</label>
+            </div>
+            <button type="submit">Create Your Account</button>
+            <div class="or-divider">OR</div>
+            <div class="social-login">
+                <button type="button" class="google-btnfire">Sign up with Google</button>
+                <button type="button" class="linkedin-btn">Sign up with LinkedIn</button>
+                <button type="button" class="github-btn">Sign up with GitHub</button>
+                <button type="button" class="facebook-btn">Sign up with Facebook</button>
+            </div>
+            <div class="create-account">
+                <p>Already have an account? <a href="login.html">Login Here</a></p>
+            </div>
+        </form>
+    </div>
+</main>
+<script>
+    function validationForm(){
+        var password  = document.getElementById( "password" ).value;
+        var confirm_password = document.getElementById("Confirm-password").value;
+        var message =  document.getElementById('msg');
+         if (password != confirm_password){
+            message.innerHTML="Password is not matching!";
+            message.style.color = "Red";
+            return false;
+         }
+         else{
+            message.innerHTML=" ";
+            return true;
+         }
+
+    }
+</script>
+<footer>
+  <p>&copy; 2024 Azure DevOps-like UI. All rights reserved.</p>
+</footer>
+<script src="/__/firebase/6.2.4/firebase-app.js"></script>
+<script src="/__/firebase/6.2.4/firebase-auth.js"></script>
+<script src="firebaseAuthentication.js"></script>
+</body>
+</html>
